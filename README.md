@@ -6,29 +6,29 @@ The main goal is to analyse current trends and determine possible factors contri
 
 Throughout the course of this notebook, I will have two main questions in mind. Based on our data:
 
-**1) Is it still worth the effort to finance your project on Kickstarter since crowdfunding has become mainstream?**  
+**1) Is it still worthwile financing your project on Kickstarter, now that crowdfunding has become mainstream?**  
 **2) What determines the success of a crowdfunding campaign on Kickstarter?**
 
 ### Project
 This project includes the following files:  
 1) Crowdfunding Data Wrangling files (jupyter notebook, html, pdf)  
 2) Crowdfunding Data Exploration files (jupyter notebook, html, pdf)  
-3) Slide Deck for the presenation of findings (jupyter notebook, html, pdf)  
-4) Raw data, master data files (kickstarter_master1-4.csv), a collectio  of historic USD exchange rates  
+3) Slide Deck for the presentation of findings (jupyter notebook, html, pdf)  
+4) Raw data, master data files (kickstarter_master1-4.csv), a collection  of historic USD exchange rates  
 
 # Dataset
 ## Assessment and Cleaning
 
-The Kickstarter data set was gathered in April 2019 from an automated web scraping service called web robots. They have been publishing monthly data of all ongoing and completed Kickstarter projects and released it to the public in the form of csv files on their website. 
+The Kickstarter data set was gathered in April 2019 from an automated web scraping service called Web Robots. They publish monthly data on all ongoing and completed Kickstarter projects and released it to the public in the form of csv files on their website. 
 
 https://webrobots.io/kickstarter-datasets/
 
-I extensively assessed the data set, which included 210,088 project observations with 37 project features each at first. The assessment revealed multiple quality and tidiness issues. For example, I found 27 tsd. duplicated projects and severe inconsistencies in currency conversions. Therefore, I took a programmatic approach to clean the data. To a great part, I had to break up insufficiently extracted JSON strings and store them as separate data points. After the wrangling processes, I ended up with 182,823 clean project entries with 32 project features.
+I extensively assessed the data set, which included 210,088 project observations with each one including 37 project features. The assessment revealed multiple quality and tidiness issues. For example, I found 27 k duplicated projects and severe inconsistencies in currency conversions. Therefore, I took a programmatic approach to clean the data. For the majority, I had to break up insufficiently extracted JSON strings and store them as separate data points. After the wrangling processes, I ended up with 182,823 clean project entries with 32 project features.
 
-One of the main problems of this data set was the missing documentation provided by the source. There was no information given about the project features, nor how the data was scraped or generated. To improve comprehention and to rule out erroneous information, I collated the data set with Kickstarter's project archive, which is unrestrictedly accessible online. 
-On the positive side, I did not encounter any inconsistencies during the wrangling and analysis processes. However, I cannot guarantee the validity and completeness of the data and take no liability for misinterpretation of the results due to the lack of documentation. 
+One of the main problems of this data set was the missing documentation provided by the source. There was no information given about the project features, nor how the data was scraped or generated. To improve comprehension and to rule out erroneous information, I collated the data set with Kickstarter's project archive, which is accessible online without any restrictions. 
+On the positive side, I did not encounter any inconsistencies during the wrangling and analysis processes. However, due to the lack of documentation, I cannot guarantee the validity and completeness of the data and take no liability for misinterpretation of the results due to the lack of documentation. 
 
-Finally, I stored the clean data in csv files. Due to Github's file size limitations, I broke up the files in four. 
+Finally, I stored the clean data into csv files. Due to Github's file size limitations, I broke the files into four parts. 
 
 ## The Structure of The Data
 
@@ -55,7 +55,7 @@ Undoubtedly, there are many different factors that may affect the success or fai
 ## 1) Is it still worth the effort to finance your project on Kickstarter since crowdfunding has become mainstream?
 
 **The short answer: yes, chances today are better than ever.**   
-In spite of increasing project numbers and therefore higher competition, there were never more campaigns ending successfully than today. Also, the pledges collected for each successful project have been staying on a relatively stable niveau.
+In spite of increasing project numbers and therefore higher competition, there were never more campaigns ending successfully than today. Also, the pledges collected for each successful project have been staying on a relatively stable level.
 
 **The number of monthly crowdfunding campaigns has been growing since 2018.**    
 After a rather slow growth in the first 5 years after Kickstarter's launch, we found extreme boosts in crowdfunding activities in August 2014 and March/April 2015. The number of campaigns literally exploded. Project counts settled down thereafter. Nevertheless, with roughly 2,000 projects each month, the number of campaigns ending each month kept on a high level in the following 5 years up until today. Most importantly, we discovered increasing numbers of campaigns since 2018.
@@ -107,16 +107,18 @@ Generally, Kickstarter tends to support projects of lower goals. Spotlighted pro
 Creative projects and categories attributed to lower commercial potential seem to most common and highly successful.
 Written work and comics dominate the top categories. Fictional & nonfictional publishing projects, children's books and comic books all ended in success. Tabletop games clearly win the race of projects with the highest success rates.
 
-**Tech and food projects are most likely to fail.** 
-Due to their high financial requirements, gadgets, hard- and software, web projects all had low chances of success, although being among the most popular categories. In addition to technology ventures, I found 3 food subcategories among the ventures with the lowest chances: small batch, drinks and restaurants. Higher failure rates do not necessarily imply that Kickstarter is generally a bad place for such kind of projects. On the positive side, once successful, tech campaigns generate the highest median pledges of plus USD 22 k. 
+**Tech and food projects are most likely to fail but realize the highest funding.** 
+Although being among the most popular categories, gadgets, hard- and software and web projects had low chances of success. In addition to technology ventures, I found 3 food subcategories among the ventures with the lowest chances: small batch, drinks and restaurants. We can attribute their high capital requirements to their poor success chances. It's important to say that higher failure rates do not necessarily imply that Kickstarter is generally a bad place for such kind of projects. On the positive side, once successful, tech campaigns generated the highest median pledges of plus USD 22 k. 
 
-**Universal category names are more likely to succeed.**
+**Universal category names are more likely to succeed.**  
 The top chances in popular project categories show a tendency to not have subcategories. Publishing, comics, film & video, art and music performed generally well they were communicated universally, instead of niche topics.
 
-**The Funding Duration is 30 days. Period.***
-We cannot affirm that a higher funding duration is rewarded by higher success rates. No matter if a campaign was successful or failed, the median period was generally 30 days. Overall, success chances were highest around 30 days.  
- 
-The average funding durations appear to be a little longer when the goals were higher. Successful goals under USD 1,500 had a mean funding duration of 28 days. Successful very high goal projects between USD 13,194 to 65,064 on average ran a week longer (35 days).
+**The Funding Duration is 30 days. Period.**
+Although creators are free to choose their funding duration, it seems to be universally accepted to run a campaign within a period of roughly 30 days. It would seem natural to assume that a longer time frame would allow projects to increase success rates and increase chances for a high funding. However, I found that longer durations are not rewarded with success. In fact, campaign periods ranging between 15 to 32 day were generally linked with the best chances.
+
+The capital requirements may affect the chances of success though. The average funding durations appear to be prolonged when the goals were higher. Successful goals under USD 1,500 had a mean funding duration of 28 days. Successful very high goal projects (USD 13,194 - 65,064) were able to extend the funding duration by one week (35 days) without loosing chances of success.
+
+The second most popular period of 60 days appears to be not advisable since it's associated with the lowest chances.
 
 **The time of the year matters.**  
 The time of the year on average affected the general success chances, investor counts and collected funding. Considering all factors, I found the best chances in December. Generally, October to December and April to July were the most promising months to run a campaign. January to March performed suboptimally. 
@@ -126,15 +128,20 @@ November was the safest bet for every creator whose primary goal was to end a ca
 **Nailed it!**  
 I identified the most valuable project categories by depicting pledges against success rates. Accordingly, the most valuable campaigns were:  
 
-1) Technology projects without defined subcategory,   
-2) Product Design projects and   
-3) Documentary films.   
+1) Design, in particular Product Design  
+2) Games, in particular Video Games and Tabletop Games  
+3) Film & Video Documentaries   
 
 In contrast, the following projects had low funding potential:   
 
 1) mobile games,   
 2) Hip-Hop music and  
 3) generally journalistic projects.
+
+## Key Insights for Presentation
+
+> Select one or two main threads from your exploration to polish up for your presentation. Note any changes in design from your exploration step here.
+
 
 # Installation
 ### Install python3 and packages using conda package manager
