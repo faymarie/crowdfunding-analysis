@@ -74,7 +74,9 @@ The money each supporter spent on incentives has been declining lately, creators
 We would expect the recent increase of competing projects, lower funding goals and the tendency to pledge greedier to negatively impact campaigns. However, with Kickstarter becoming mainstream, the number of people who supported a project has been increasing stronger than the number of active campaigns. While a lack of supporters caused severe failure rates during the hype years, the backer/project ratio has been increasing since 2015. Therefore, success rates and the overall funding capacity has been stabilizing. In October 2018, there was even a record median of 72 backers supporting each project. 
 
 **Better chances to be promoted by Kickstarter.**  
-In spite of growing campaign numbers, Kickstarter today promotes a higher percentage of projects on their landing page (and possibly social channels) since the beginning of 2018. Today, more than 60% of all crowdfundings are spotlighted on Kickstarter's channels and only 27% of campaigns do not gain any support. The proportion of unsupported projects has been decreaesing from 55% in the hype years. Today, more projects than ever are additionally picked by staff to be awarded the "Projects We Love" badge as teh proportion of fully supported projects has kept stable at at rate of 10%.
+In spite of growing campaign numbers, Kickstarter promotes a higher percentage of projects on their landing page (and possibly social channels) since the beginning of 2018. Today, more than 60% of all fundings are spotlighted on Kickstarter's channels. The proportion of unsupported projects has been decreasing from 55% in the hype years to only 27% today.   
+
+Additionally, more projects than ever are additionally picked by staff to be awarded the "Projects We Love" badge as the proportion of fully supported projects has kept constant at at rate of 10%.
 
 # 2) What determines the success of a crowdfunding campaign on Kickstarter?
 
@@ -82,17 +84,24 @@ To determine whether a campaign was considered successful or not, we looked into
 When creators decide on a goal, they generally have to ponder whether to maximize their chances to successfully end a campaign or to generate the maximum funding possible. Both targets oppose each other diametrically. Because of Kickstarter's all-or-nothing-approach, raising the goal typically decreases the chances to succeed, yet creators risk insufficient funding by aiming for low goals.
 
 **The lower the goal the better.**  
-If creators want to keep at least a 50% chance, it appears to be advisable to stay below a benchmark of USD 10,000, leaving all other effects aside. On average goals below 5,000 had a chance above 60%. Very risk-averse creators may even stick goals below USD 1,500. Interestingly, low goal projects typically generate a surplus of 34% above goal. At the same time goals between USD 1,500 to 13,194 generate a median surplus of 11-12%. Therefore, the loss in the total funding by setting low goals may be tolerable in exchange for better chances of success.
+If creators want to keep at least a 50% chance, it appears to be advisable to stay below a benchmark of USD 10,000, leaving all other effects aside. On average goals below 5,000 had a chance above 60%. Very risk-averse creators may even stick goals below USD 1,500. 
+
+**Successful projects realize an average surplus of 17.5% above goal** 
+The surplus creators realize depends on the goal chosen. For goals under USD 3,000 the surplus rate describes a curve of exponential decay. The lower the goal chosen the higher was the surplus rate. Low goal projects typically realized a surplus of 34%, whereas goals between USD 1,5 k to 13 made a median surplus of 11-12%. 
+
+Creators seeking funding above USD 18 k, were able to count on increasing surplus rates. In particular, goals from 45 k up to 113 k realized a median surplus of 25.6%. Yet, the surplus rates become less reliable as the volatility of pledges increases.
 
 **It is highly unlikely to successfully collect funding beyond USD 100k.**  
-Creators seeking high funding may consider alternative investment possibilities to Kickstarter. 95% of all successful projects stay below funding of USD 38k. At the same time, success chances are very low for very high goal projects of USD 65k. to 113k : only 20% of campaigns end in success. For even higher goals, success chances drop to zero.
+Creators seeking high funding may consider alternative investment possibilities to Kickstarter. 3 quarters of successful goals were below USD 9,600 anyways.  The success chances of projects between USD 65 k to 113 k were only 20%. For even higher goals, success chances draw closer to zero.
 
-**Kickstarter's promotion efforts are extremely relevant for success.**  
-Strictly projects that were supported by Kickstarter were successful. On average, 44% of projects were spotlighted on Kickstarter's channels and 13% of completed projects were fully supported. All crowdfundings that were not announced on Kickstarter's landing page failed. This includes a few campaigns that got the "Projects We Love" badge, but were not spotlighted in any way. 
+**Kickstarter's promotion support is extremely relevant for success.**  
+In 10 years, strictly projects that were supported by Kickstarter succeeded. Since 2018, on average, 54% of projects were spotlighted on Kickstarter's landing page (and optionally on Kickstarter's social media channels). 11% of completed projects were fully supported. Meaning,they got picked by staff and were awarded the "Projects We Love" badge.  
+
+All crowdfundings that were not announced on Kickstarter's landing page failed. This includes a few campaigns that got the "Projects We Love" badge, but were not spotlighted in any way. 
 
 Being fully featured by Kickstarter also drove the total collected funding. Projects which received the 'Projects We Love' badge in addition to being spotlighted on the landing page, had more than a double of supporters, which resulted in 2 to 2.5 times higher funding compared to campaigns that were only spotlighted. 
 
-Generally, Kickstarter tends to support projects of lower goals. Spotlighted projects on average sought a goal of USD 2,800. Creators who intend to collect higher funding should aim for the badge in addition to being featured on the website. Fully supported projects realized a median goal of USD 10,000.
+Generally, Kickstarter tends to support projects of lower goals. Spotlighted projects on average sought a goal of USD 3,400. Creators who intend to collect higher funding should aim for the badge in addition to being featured on the website. Fully supported projects realized a median goal of USD 7,100.
 
 **Kickstarter is a platform to fund creative projects with comparatively low financial requirements.**  
 Creative projects and categories attributed to lower commercial potential seem to most common and highly successful.
