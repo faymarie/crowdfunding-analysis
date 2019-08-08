@@ -13,7 +13,7 @@ Throughout the course of this notebook, I will have two main questions in mind. 
 This project includes the following files:  
 1) Crowdfunding Data Wrangling files (jupyter notebook, html, pdf)  
 2) Crowdfunding Data Exploration files (jupyter notebook, html, pdf)  
-3) Slide Deck for the presentation of findings (jupyter notebook, html, pdf)  
+3) Slide Deck for the presentation of findings (jupyter notebook, html presentation, pdf)  
 4) Raw data, master data files (kickstarter_master1-4.csv), a collection of historic USD exchange rates  
 
 # Dataset
@@ -32,9 +32,9 @@ Finally, I stored the clean data into csv files. Due to Github's file size limit
 
 ## The Structure of The Data
 
-The clean dataset contains information on 10 years of Kickstarter projects; from Kickstarter's launch in April 2009 to April 2019. The focus of my analysis was all completed projects up until Kickstarter's anniversary in April 2019. This left me with 169,661 project observations.
+The clean dataset contains information on 10 years of Kickstarter projects; from Kickstarter's launch in April 2009 to April 2019. The focus of my analysis was all completed projects up until Kickstarter's anniversary in April 2019. This left me with 165,452 project observations.
 
-As for the features of this dataset, 22 variables were selected for analysis. The variables included quantitative variables such as the funding goal or the final pledges, several time-related variables and qualitative data, such as project categories, names and project status.
+As for the features of this dataset, 24 variables were selected for analysis. The variables included quantitative variables such as the funding goal or the final pledges, several time-related variables and qualitative data, such as project categories, names and project status.
 
 ### Main Feature of Interest
 The main feature that I will explore is the **status** of a project. It depicts whether the crowdfunding was a success or failure.
@@ -89,7 +89,7 @@ If creators want to keep at least a 50% chance, it appears to be advisable to st
 **Successful projects realized an average surplus of 17% above goal** 
 The surplus that creators realize depends on the goal that is chosen.  Roughly, the surplus rate above goal describes a u-form. For goals under USD 3k, the surplus rate descended exponentially. The lower the chosen goal the higher was the surplus rate. Low goal projects typically realized a surplus of 40%, whereas goals between USD 1,5k to 13k made a median surplus of 11-12%. 
 
-Creators seeking funding above USD 18k, were able to count on increasing surplus rates. In particular, goals from 45k up to 113k realized a median surplus of 26%. However, the surplus rates become less reliable as the volatility of pledges increases.
+Creators seeking funding above USD 18k, were able to count on increasing surplus rates. In particular, goals from 45k up to 114k realized a median surplus of 26%. However, the surplus rates become less reliable as the volatility of pledges increases.
 
 **It is highly unlikely for projects to successfully collect funding beyond USD 100k.**  
 Creators seeking high funding may consider alternative investment possibilities to Kickstarter. 3 quarters of successful goals were below USD 9,6k anyways. The success chances of projects between USD 65k to 113k were only 20%. For even higher goals, success chances draw closer to zero.
@@ -111,17 +111,17 @@ Written work and comics dominate the top categories. Fiction & nonfiction publis
 Even though they are among the most popular categories, gadgets, hard- and software and web projects had low chances of success. In addition to technology ventures, I found 3 food subcategories among the ventures with the lowest chances: small batch, drinks and restaurants. We can attribute their high capital requirements to their poor success chances. It's important to say that higher failure rates do not necessarily imply that Kickstarter is generally a bad place for these types of projects. On the positive side, once successful, tech campaigns generated the highest median pledges of plus USD 22k. 
 
 **Universal category names are more likely to succeed.**  
-The top chances in popular project categories show a tendency to not have subcategories selected. Publishing, comics, film & video, art and music performed generally well they were communicated universally, instead of niche topics.
+The top chances in popular project categories show a tendency to not have subcategories. Publishing, comics, film & video, art and music performed generally well if they were communicated universally, instead of niche topics.
 
-**The Funding Duration is 30 days. Period.**
-Although creators are free to choose their funding duration, it seems to be universally accepted to run a campaign within a period of roughly 30 days. It would seem natural to assume that a longer time frame would allow projects to increase their chances of success and collect a higher funding. However, I found that longer durations are not rewarded with success. In fact, campaign periods ranging between 15 to 32 days were generally linked with the best chances.
+**The funding furation is 30 days. Period.**
+Although creators are free to choose their funding duration, it seems to be universally accepted to run a campaign within a period of roughly 30 days. It would seem natural to assume that a longer time frame would allow projects to increase their chances of success and collect higher funding. However, I found that longer durations are not rewarded with success. In fact, campaign periods ranging from 15 to 32 days were generally linked with the best chances.
 
-The capital requirements may affect the chances of success though. The average funding durations appear to be prolonged when the goals was set higher. Successful goals under USD 1,5k had a mean funding duration of 28 days. Successful very high goal projects (USD 13k - 65k) were able to extend the funding duration by one week (35 days) without loosing chances of success.
+The capital requirements may affect the chances of success though. The average funding durations appear to be prolonged when goals were higher. Successful goals under USD 1.5k had a mean funding duration of 28 days. Successful very high goal projects (USD 13k - 65k) were able to extend the funding duration by one week (35 days) without losing chances of success.
 
 The second most popular period of 60 days turned out to be not advisable since it's associated with the lowest chances.
 
 **The time of year matters.**  
-The time of the year on average affected the general success chances, investor counts and collected funding. Considering all factors, I found the best chances are in December. Generally, October to December and April to July were the most promising months to run a campaign. January to March performed suboptimally. 
+The time of year affected the general success chances, investor counts and collected funding. Considering these factors, I found the best chances are in December. Generally, October to December and April to July are the most promising months to run a campaign. January to March performed suboptimally. 
 
 November was the safest bet for every creator whose primary goal was to end a campaign successfully. Those creators should avoid running a campaign in January since success rates were roughly 10% lower. Creators who seek high funding had the best chances in December or June and should avoid January to March.
 
@@ -130,17 +130,27 @@ I identified the most valuable project categories by depicting pledges against s
 
 1) Design, in particular Product Design
 2) Games, in particular Video Games and Tabletop Games
-3) Film & Video Documentaries  
+4) Fashion, in particular Apparel
+3) Film & Video, in particular Documentaries & Narrative Films 
 
-In contrast, the following projects had low funding potential:   
+In contrast, the following popular project types were rather unsuccessful:   
 
-1) mobile games,   
-2) Hip-Hop music and  
-3) generally journalistic projects.
+1) Web Tech, Software and Apps  
+2) Mobile Games  
+3) Food Trucks  
+4) Hip-Hop Music  
 
 ## Key Insights for Presentation
 
-> Select one or two main threads from your exploration to polish up for your presentation. Note any changes in design from your exploration step here.
+For the presentation, I will explore the points I discussed above in visualizations. By choosing the most meaningful plots I will explore my 2 research topics. By the end of each section, I will summarize my findings. The first summary comes to the conclusion that **Crowdfunding on Kickstarter has matured.**  
+The second research topic will be summarized by **6 Rules for Success on Kickstarter**.
+
+In contrast to the exploration, I omitted general descriptive statistics of Kickstarter.com and univariate plots of the investigated campaign features. Considering the complexity of my research topics, bivariate and multivariate plots were a better fit to visualize my findings. 
+
+To answer whether it is still worthwhile to run a campaign on Kickstarter, I depicted the development of the main and supporting variables on a timeline. While doing so, I paid extra attention to the differences between successful campaigns and failed campaigns. To tell the story, I start by laying out how Kickstarter becoming mainstream may have negatively affected campaigns. Then, I argue that creators nowadays benefit from Kickstarter's popularity, more than they may suffer from increased competition.      
+
+As for my second research question, I correlated project characteristics with one another and investigated the impact on success and the raised funding. As I have identified trends in project characteristics throughout the analysis of my first research topic, I considered the data from the latest years, usually 2018. I believe that the most current data describes best what determines the success of a campaign today.
+I used lineplots, boxplots, scatterplots and barplots to visualize my findings. Ultimately, I was able to identify 6 general rules for running a campaign successfully. 
 
 # References
 
