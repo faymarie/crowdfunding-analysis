@@ -6,7 +6,7 @@ The main goal is to analyse current trends and determine possible factors contri
 
 Throughout the course of this notebook, I will have two main questions in mind. Based on our data:
 
-**1) Is it still worthwile financing your project on Kickstarter, now that crowdfunding has become mainstream?**  
+**1) Is it still worthwhile financing your project on Kickstarter, now that crowdfunding has become mainstream?**  
 **2) What determines the success of a crowdfunding campaign on Kickstarter?**
 
 ### Project
@@ -14,16 +14,16 @@ This project includes the following files:
 1) Crowdfunding Data Wrangling files (jupyter notebook, html, pdf)  
 2) Crowdfunding Data Exploration files (jupyter notebook, html, pdf)  
 3) Slide Deck for the presentation of findings (jupyter notebook, html, pdf)  
-4) Raw data, master data files (kickstarter_master1-4.csv), a collection  of historic USD exchange rates  
+4) Raw data, master data files (kickstarter_master1-4.csv), a collection of historic USD exchange rates  
 
 # Dataset
 ## Assessment and Cleaning
 
-The Kickstarter data set was gathered in April 2019 from an automated web scraping service called Web Robots. They publish monthly data on all ongoing and completed Kickstarter projects and released it to the public in the form of csv files on their website. 
+The Kickstarter data set was gathered in July 2019 from an automated web scraping service called Web Robots. They publish monthly data on all ongoing and completed Kickstarter projects and released it to the public in the form of csv files on their website. 
 
 https://webrobots.io/kickstarter-datasets/
 
-I extensively assessed the data set, which included 210,088 project observations with each one including 37 project features. The assessment revealed multiple quality and tidiness issues. For example, I found 27k duplicated projects and severe inconsistencies in currency conversions. Therefore, I took a programmatic approach to clean the data. For the majority, I had to break up insufficiently extracted JSON strings and store them as separate data points. After the wrangling processes, I ended up with 182,823 clean project entries with 32 project features.
+I extensively assessed the data set, which included 212,377 project observations with each one including 37 project features. The assessment revealed multiple quality and tidiness issues. For example, I found 27k duplicated projects and severe inconsistencies in currency conversions. Therefore, I took a programmatic approach to clean the data. For the majority, I had to break up insufficiently extracted JSON strings and store them as separate data points. After the wrangling processes, I ended up with 182,823 clean project entries with 32 project features.
 
 One of the main problems of this data set was the missing documentation provided by the source. There was no information given about the project features, nor how the data was scraped or generated. To improve comprehension and to rule out erroneous information, I collated the data set with Kickstarter's project archive, which is accessible online without any restrictions. 
 On the positive side, I did not encounter any inconsistencies during the wrangling and analysis processes. However, due to the lack of documentation, I cannot guarantee the validity and completeness of the data and take no liability for misinterpretation of the results due to the lack of documentation. 
@@ -52,13 +52,13 @@ Undoubtedly, there are many different factors that may affect the success or fai
 - the location of a project: country, loc type.
 
 # Key Insights of Findings
-## 1) Is it still worthwile financing your project on Kickstarter, now that crowdfunding has become mainstream?
+## 1) Is it still worthwhile financing your project on Kickstarter, now that crowdfunding has become mainstream?
 
 **The short answer: yes, chances today are better than ever.**   
-In spite of increasing project numbers and therefore higher competition, there have never been more campaigns ending successfully than today. Also, the pledges collected for each successful project have been staying on a relatively stable level.
+In spite of increasing project numbers and therefore higher competition, there have never been more campaigns ending successfully than today. Also, the collected pledges for each successful project have been staying on a relatively stable level.
 
 **The number of monthly crowdfunding campaigns has been growing again since 2018.**    
-After a rather slow growth in the first 5 years after Kickstarter's launch, crowdfunding activities exploded in August 2014 and again in March/April 2015. Project counts settled down thereafter. Nevertheless, with roughly 2k new projects each month, activities remained on a high level up until today. Since 2018, the number of campaigns ending each month have been increasing notably.
+After a rather slow growth in the first 5 years after Kickstarter's launch, crowdfunding activities exploded in August 2014 and again in March/April 2015. Project counts settled down thereafter. Nevertheless, with roughly 2k new projects each month, activities remained on a high level up until today. Since 2018, the number of campaigns ending each month has been increasing notably.
 
 **In 2018, 63.5% of campaigns were successful.**    
 With the hype of Kickstarter in late 2014, we found an abnormally high percentage of failed projects. 61% flopped. During the years of recession the likelihood of failing minimally exceeded the success rates. 51% of projects failed. By the beginning of 2018, Kickstarter turned success and failure rates upside down. On average, 63.5% of completed campaigns had the chance to succeed. Actually, the record for successful campaigns was set only recently, in March 2019. Chances of winning were 74%!
@@ -86,10 +86,10 @@ When creators decide on a goal, they generally have to consider whether to maxim
 **The lower the goal the better.**  
 If creators want to keep at least a 50% chance, it appears to be advisable to stay below a benchmark of USD 10k. On average goals below USD 5k had a greater than 60% chance of succeeding. Very risk-averse creators may even choose to stick to goals below USD 1,5k. 
 
-**Successful projects realized an average surplus of 17.5% above goal** 
-The surplus that creators realize depends on the goal that is chosen.  Roughly, the surplus rate above goal describes a u-form. For goals under USD 3k, the surplus rate descended exponentially. The lower the chosen goal the higher was the surplus rate. Low goal projects typically realized a surplus of 34%, whereas goals between USD 1,5k to 13k made a median surplus of 11-12%. 
+**Successful projects realized an average surplus of 17% above goal** 
+The surplus that creators realize depends on the goal that is chosen.  Roughly, the surplus rate above goal describes a u-form. For goals under USD 3k, the surplus rate descended exponentially. The lower the chosen goal the higher was the surplus rate. Low goal projects typically realized a surplus of 40%, whereas goals between USD 1,5k to 13k made a median surplus of 11-12%. 
 
-Creators seeking funding above USD 18k, were able to count on increasing surplus rates. In particular, goals from 45k up to 113k realized a median surplus of 25.6%. However, the surplus rates become less reliable as the volatility of pledges increases.
+Creators seeking funding above USD 18k, were able to count on increasing surplus rates. In particular, goals from 45k up to 113k realized a median surplus of 26%. However, the surplus rates become less reliable as the volatility of pledges increases.
 
 **It is highly unlikely for projects to successfully collect funding beyond USD 100k.**  
 Creators seeking high funding may consider alternative investment possibilities to Kickstarter. 3 quarters of successful goals were below USD 9,6k anyways. The success chances of projects between USD 65k to 113k were only 20%. For even higher goals, success chances draw closer to zero.
@@ -111,7 +111,7 @@ Written work and comics dominate the top categories. Fiction & nonfiction publis
 Even though they are among the most popular categories, gadgets, hard- and software and web projects had low chances of success. In addition to technology ventures, I found 3 food subcategories among the ventures with the lowest chances: small batch, drinks and restaurants. We can attribute their high capital requirements to their poor success chances. It's important to say that higher failure rates do not necessarily imply that Kickstarter is generally a bad place for these types of projects. On the positive side, once successful, tech campaigns generated the highest median pledges of plus USD 22k. 
 
 **Universal category names are more likely to succeed.**  
-The top chances in popular project categories show a tendency to not have subcategories. Publishing, comics, film & video, art and music performed generally well they were communicated universally, instead of niche topics.
+The top chances in popular project categories show a tendency to not have subcategories selected. Publishing, comics, film & video, art and music performed generally well they were communicated universally, instead of niche topics.
 
 **The Funding Duration is 30 days. Period.**
 Although creators are free to choose their funding duration, it seems to be universally accepted to run a campaign within a period of roughly 30 days. It would seem natural to assume that a longer time frame would allow projects to increase their chances of success and collect a higher funding. However, I found that longer durations are not rewarded with success. In fact, campaign periods ranging between 15 to 32 days were generally linked with the best chances.
@@ -120,7 +120,7 @@ The capital requirements may affect the chances of success though. The average f
 
 The second most popular period of 60 days turned out to be not advisable since it's associated with the lowest chances.
 
-**The time of the year matters.**  
+**The time of year matters.**  
 The time of the year on average affected the general success chances, investor counts and collected funding. Considering all factors, I found the best chances are in December. Generally, October to December and April to July were the most promising months to run a campaign. January to March performed suboptimally. 
 
 November was the safest bet for every creator whose primary goal was to end a campaign successfully. Those creators should avoid running a campaign in January since success rates were roughly 10% lower. Creators who seek high funding had the best chances in December or June and should avoid January to March.
@@ -142,6 +142,15 @@ In contrast, the following projects had low funding potential:
 
 > Select one or two main threads from your exploration to polish up for your presentation. Note any changes in design from your exploration step here.
 
+# References
+
+1) Agrawal, Ajay; Catalini, Christian; Goldfarb, Avi (June 2013). "Some Simple Economics of Crowdfunding". NBER Working Paper No. 19133. doi:10.3386/w19133, https://www.nber.org/papers/w19133.pdf  
+2) Wikipedia.org (July 2019): https://en.wikipedia.org/wiki/Crowdfunding  
+3) Kickstarter.com, "How to start a project" (July 2019), https://www.kickstarter.com/learn?ref=nav  
+4) Reviewed by Smith, Tim (last updated June 2019),  "Crowdfunding", https://www.investopedia.com/terms/c/crowdfunding.asp  
+5) Barnett, Chance (May 2013), "Top 10 Crowdfunding Sites For Fundraising",  https://www.forbes.com/sites/chancebarnett/2013/05/08/top-10-crowdfunding-sites-for-fundraising/#1bfd6cfd3850  
+6) Nguyen, Stacey (last updated May 2019), "The 8 best Crowdfunding Websites of 2019", https://www.thebalancesmb.com/best-crowdfunding-sites-4580494  
+7) https://www.thebalancesmb.com/a-guide-what-is-crowdfunding-985100
 
 # Installation
 ### Install python3 and packages using conda package manager
